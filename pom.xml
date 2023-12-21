@@ -9,10 +9,11 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <properties>
-
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <maven-compiler-version>3.8.1</maven-compiler-version>
+
+    <jackson.version>2.16.0</jackson.version>
 
     <junit-bom.version>5.9.2</junit-bom.version>
     <modelmapper.version>3.1.1</modelmapper.version>
@@ -38,6 +39,41 @@
   </dependencyManagement>
 
   <dependencies>
+
+    <!-- Jackson Annotations -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <!-- Jackson Core -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <!-- Jackson Databind -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <!-- Jackson Datatype JAXRS -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jaxrs</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <!-- Jackson Datatype Hibernate5 -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-hibernate5</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
 
     <!-- Model Mapper -->
     <dependency>
