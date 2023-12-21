@@ -39,6 +39,14 @@
     </dependencies>
   </dependencyManagement>
 
+  <distributionManagement>
+    <repository>
+      <id>github-okk-utils</id>
+      <name>GitHub BSTK Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/BSTK/okk-utils</url>
+    </repository>
+  </distributionManagement>
+
   <dependencies>
 
     <!-- Logback Classic -->
