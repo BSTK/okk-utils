@@ -22,6 +22,7 @@
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <logback-classic.version>1.4.14</logback-classic.version>
   </properties>
 
   <dependencyManagement>
@@ -39,6 +40,13 @@
   </dependencyManagement>
 
   <dependencies>
+
+    <!-- Logback Classic -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback-classic.version}</version>
+    </dependency>
 
     <!-- Jackson Annotations -->
     <dependency>

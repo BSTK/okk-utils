@@ -35,4 +35,8 @@ public class Json {
       throw new IllegalArgumentException(ERROR_MESSAGE, ex);
     }
   }
+
+  public static ObjectMapper mapper() {
+    return JSON_MAPPER;
+  }
 }
