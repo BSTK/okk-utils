@@ -15,6 +15,7 @@
     <maven-compiler-version>3.8.1</maven-compiler-version>
 
     <junit-bom.version>5.9.2</junit-bom.version>
+    <modelmapper.version>3.1.1</modelmapper.version>
     <commons-lang3.version>3.14.0</commons-lang3.version>
     <eclipse-collections.version>11.1.0</eclipse-collections.version>
 
@@ -37,6 +38,13 @@
   </dependencyManagement>
 
   <dependencies>
+
+    <!-- Model Mapper -->
+    <dependency>
+      <groupId>org.modelmapper</groupId>
+      <artifactId>modelmapper</artifactId>
+      <version>${modelmapper.version}</version>
+    </dependency>
 
     <!-- Eclipse Collections -->
     <dependency>
