@@ -1,2 +1,4 @@
 # okk-utils
-Uma biblioteca utilitária para tudo que preciso
+Uma biblioteca utilitária para o dia-a-dia!
+
+BSTK
