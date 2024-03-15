@@ -3,7 +3,6 @@ package dev.bstk.okkutil.mapper.modelmapper;
 import org.modelmapper.ModelMapper;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Mapper {
 
@@ -19,6 +18,6 @@ public class Mapper {
     return source
       .stream()
       .map(element -> MODEL_MAPPER.map(element, clazz))
-      .collect(Collectors.toList());
+      .toList();
   }
 }
