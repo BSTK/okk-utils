@@ -17,6 +17,7 @@
 
     <junit-bom.version>5.9.2</junit-bom.version>
     <modelmapper.version>3.1.1</modelmapper.version>
+    <modelmapper-module-record.version>1.0.0</modelmapper-module-record.version>
     <commons-lang3.version>3.14.0</commons-lang3.version>
     <eclipse-collections.version>11.1.0</eclipse-collections.version>
 
@@ -41,9 +42,9 @@
 
   <distributionManagement>
     <repository>
-      <id>github-okk-utils</id>
+      <id>github</id>
       <name>GitHub BSTK Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/BSTK/okk-utils</url>
+      <url>https://maven.pkg.github.com/bstk/okk-utils</url>
     </repository>
   </distributionManagement>
 
@@ -96,6 +97,13 @@
       <groupId>org.modelmapper</groupId>
       <artifactId>modelmapper</artifactId>
       <version>${modelmapper.version}</version>
+    </dependency>
+
+    <!-- Model Mapper Record -->
+    <dependency>
+      <groupId>org.modelmapper</groupId>
+      <artifactId>modelmapper-module-record</artifactId>
+      <version>${modelmapper-module-record.version}</version>
     </dependency>
 
     <!-- Eclipse Collections -->
