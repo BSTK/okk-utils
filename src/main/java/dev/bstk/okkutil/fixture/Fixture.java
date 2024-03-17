@@ -18,7 +18,7 @@ public class Fixture {
 
   private Fixture() { }
 
-  private static <T> T fixure(String pathFixture, final Class<T> clazz) {
+  public static <T> T fixure(String pathFixture, final Class<T> clazz) {
     return fixure(FIXTURE_PATH_DEFAULT_SOURCE_TEST, pathFixture, clazz);
   }
 
