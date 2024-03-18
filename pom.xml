@@ -69,6 +69,7 @@
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
       <version>${jackson.version}</version>
+      <scope>compile</scope>
     </dependency>
 
     <!-- Jackson Databind -->
@@ -76,6 +77,7 @@
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
       <version>${jackson.version}</version>
+      <scope>compile</scope>
     </dependency>
 
     <!-- Jackson Datatype Hibernate5 -->
@@ -83,6 +85,7 @@
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-hibernate5</artifactId>
       <version>${jackson.version}</version>
+      <scope>compile</scope>
     </dependency>
 
     <!-- Jackson Datatype JSR 310 -->
@@ -98,6 +101,7 @@
       <groupId>org.modelmapper</groupId>
       <artifactId>modelmapper</artifactId>
       <version>${modelmapper.version}</version>
+      <scope>compile</scope>
     </dependency>
 
     <!-- Model Mapper Record -->
@@ -105,6 +109,7 @@
       <groupId>org.modelmapper</groupId>
       <artifactId>modelmapper-module-record</artifactId>
       <version>${modelmapper-module-record.version}</version>
+      <scope>compile</scope>
     </dependency>
 
     <!-- Eclipse Collections -->
@@ -126,13 +131,6 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>${commons-lang3.version}</version>
-    </dependency>
-
-    <!-- Junit -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 
