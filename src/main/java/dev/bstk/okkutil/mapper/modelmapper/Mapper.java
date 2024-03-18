@@ -1,12 +1,14 @@
 package dev.bstk.okkutil.mapper.modelmapper;
 
 import org.modelmapper.ModelMapper;
+import org.modelmapper.record.RecordModule;
 
 import java.util.List;
 
 public class Mapper {
 
-  private static final ModelMapper MODEL_MAPPER = new ModelMapper();
+  private static final ModelMapper MODEL_MAPPER = new ModelMapper()
+    .registerModule(new RecordModule());
 
   private Mapper() { }
 
