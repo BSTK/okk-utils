@@ -1,13 +1,15 @@
 package dev.bstk.okkutil.json.jackson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import java.io.IOException;
 
 public class Json {
 
   private static final String ERROR_MESSAGE = "Unable to parse!";
-  private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
+  private static final ObjectMapper JSON_MAPPER = new ObjectMapper()
+    .registerModule(new JavaTimeModule());
 
   private Json() { }
 
